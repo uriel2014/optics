@@ -16,6 +16,7 @@ body{
   width:100%;
   display:flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
 /* Heading Banner of the Main Image Section */
@@ -28,6 +29,7 @@ body{
   background-color: maroon;
   height:3rem;
   color: white;
+  margin-right: 4rem;
 }
 
 .logo{
@@ -49,5 +51,131 @@ body{
 .header nav {
   padding-top:1rem;
   padding-bottom: 1rem;
-  padding-right: 2rem;
+  margin-right: 2rem;
 }
+
+.header nav span {
+  padding-right:2rem;
+}
+
+/* THE box section of the Main Image Section */
+
+.box{
+  background-color: white;
+  color: black;
+  opacity:0.8;
+  padding: 1.5rem 5rem;
+  font-size:2rem;
+  font-weight:bold;
+  line-height: 1.2;
+  margin-top: 10rem;
+  margin-right: 2rem;
+}
+
+/* ICONS SECTION */
+
+.icons{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:3rem;
+  padding-bottom: 3rem;
+  width:100%;
+}
+
+.icon{
+  height:8rem;
+}
+
+.icon img{
+  margin-right:7rem;
+}
+
+.one{
+  width:3.5rem;
+  height:4rem;
+  margin-bottom: 1rem;
+}
+
+.two, .three{
+  width:5rem;
+}
+
+.two{
+  height:2rem;
+  margin-bottom: 3rem;
+}
+
+.three{
+  height:3rem;
+  margin-bottom: 2rem;
+}
+
+.icon h3{
+  text-align: center;
+}
+
+
+
+/*CONTENT SECTION */
+
+.Information{
+  display:flex;
+  justify-content: center;
+  width:100%;
+  align-items: flex-start;
+}
+
+
+.Info{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width:35%; /* Make the width of the whole flex item and container be 35% of the
+  whole section */
+  margin-left:5%;
+}
+
+.topic{
+  width:10rem;
+  font-size: 1rem;
+  font-weight: bold;
+  height:auto;
+  margin-bottom: 1rem;
+  background-color: maroon;
+  color:white;
+  text-align: center;
+}
+
+.description{
+  width:100%;/* THis will be 100% the width of its flex container*/
+  margin-bottom: 5rem;}
+
+
+footer{
+background-color: skyblue;
+padding:4rem;
+display:flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+footer img{
+  height:1.5rem;
+  margin-right:1rem;
+}
+
+
+
+/* Now let us focus on changing the size of the webpage with different screen sizes*/
+
+/* Changing the Webpage for screen size between 561 and 700px*/
+
+
+
+
+
+
+
+/* Changing the webpage for screen size with max width of 560 */
