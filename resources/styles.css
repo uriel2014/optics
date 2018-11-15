@@ -19,6 +19,20 @@ body{
   align-items: flex-end;
 }
 
+@media only screen and (max-width:700px){
+  .main-image{
+    height:22rem;
+  }
+}
+
+@media only screen and (max-width:560px){
+
+  .main-image{
+    height:17rem;
+    align-items: flex-start;
+  }
+}
+
 /* Heading Banner of the Main Image Section */
 .header{
   display:flex;
@@ -32,10 +46,14 @@ body{
   margin-right: 4rem;
 }
 
+#small{
+  display:none;
+}
+
 .logo{
   display:flex;
   justify-content: flex-start;
-  justify-content: center;
+  align-items: center;
 }
 
 .logo img{
@@ -58,6 +76,56 @@ body{
   padding-right:2rem;
 }
 
+@media only screen and (max-width:700px){
+  .header{
+    width:100%;
+    margin-top:0;
+    margin-right:0;
+  }
+  .logo img{
+    margin-left: 1rem;
+  }
+
+  .logo h3{
+    font-size: 0.8rem;
+  }
+
+  .header nav {
+    margin-right: 1rem;
+  }
+
+  .header nav span {
+    padding-right:1rem;
+  }
+
+}
+
+
+@media only screen and (max-width:560px){
+  .header{
+    width:100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  #small{
+    display: inline;
+    margin-right: 2rem;
+  }
+
+  .logo img{
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+  .logo h3{
+    display: none;
+  }
+
+  .header nav {
+    display: none;
+  }
+}
+
 /* THE box section of the Main Image Section */
 
 .box{
@@ -70,6 +138,25 @@ body{
   line-height: 1.2;
   margin-top: 10rem;
   margin-right: 2rem;
+}
+
+@media only screen and (max-width:700px){
+  .box{
+    padding:0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width:560px){
+  .box{
+    margin-top: 9rem;
+    font-size:1rem;
+    padding: 1rem;
+    text-align: center;
+    margin-right: 0;
+    width:100%;
+  }
 }
 
 /* ICONS SECTION */
@@ -85,10 +172,11 @@ body{
 
 .icon{
   height:8rem;
-}
-
-.icon img{
-  margin-right:7rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7rem;
 }
 
 .one{
@@ -111,10 +199,45 @@ body{
   margin-bottom: 2rem;
 }
 
-.icon h3{
+.icon h5{
   text-align: center;
 }
 
+@media only screen and (max-width:700px){
+
+  .icon{
+    margin-right: 3rem;
+  }
+
+ .one{
+    width:3.5rem;
+  }
+
+  .two, .three{
+    width:4rem;
+  }
+}
+
+@media only screen and (max-width:560px){
+  .icons{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding-top:3.77rem;
+    padding-bottom: 3.77rem;
+  }
+
+  .icon{
+    margin-right: 0;
+    margin-bottom: 1.75rem;
+  }
+
+  .icon h5{
+    text-align: center;
+    font-size: 0.77rem;
+  }
+}
 
 
 /*CONTENT SECTION */
@@ -152,6 +275,29 @@ body{
   width:100%;/* THis will be 100% the width of its flex container*/
   margin-bottom: 5rem;}
 
+  @media only screen and (max-width:560px){
+
+    .Information{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .Info{
+      width:100%;
+      margin-left:0;
+    }
+
+    .topic{
+      width:100%;
+      font-size: 1rem;
+    }
+
+    .description{
+      width:100%;
+      margin-bottom: 4rem;}
+  }
 
 footer{
 background-color: skyblue;
@@ -167,15 +313,12 @@ footer img{
 }
 
 
+@media only screen and (max-width:560px){
+  footer{
+    justify-content: center;
+  }
 
-/* Now let us focus on changing the size of the webpage with different screen sizes*/
-
-/* Changing the Webpage for screen size between 561 and 700px*/
-
-
-
-
-
-
-
-/* Changing the webpage for screen size with max width of 560 */
+  footer p{
+    display:none;
+  }
+}
